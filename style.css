@@ -152,6 +152,7 @@ nav {
     padding-bottom: 0;
     position: relative;
     z-index: -1;
+    overflow: hidden;
 }
 
 .hero h1, .hero h3, .hero h4 {
@@ -206,88 +207,28 @@ nav {
 
 .hero img {
     height: 250px;
-    transform: translateX(40%);
-    object-fit: cover;
-    /* border: 2px solid white; */
-    margin: 20px 0 0 0;
 }
 
-@media (max-width:1419px) {
+@media (max-width:910px) {
     .hero img {
-        height: 250px;
-        transform: translateX(15%);
+        height: 220px;
+        transform: translateX(-5%);
+        object-position: fixed;
     }
 }
 
-@media (max-width:988px) {
+@media (max-width:771px) {
     .hero img {
-        height: 250px;
-        width: 100%;
+        height: 200px;
+        transform: rotate(90deg) translateY(0%) translateX(50%);
+        margin-top: 16%;
+        animation: iphoneapp 1s forwards;
     }
+    
 }
 
-@media (max-width:835px) {
-    .hero {
-        overflow: hidden;
-    }
-
-    .hero img {
-        margin-top: 25%;
-        transform: rotate(450deg) translateX(100%);
-        /* border: 2px solid white; */
-        animation: ith 1s forwards;
-    }
-
-    @keyframes ith {
-        to{
-            transform: rotate(450deg) translateX(0%);
-
-        }
-    }
-}
-
-@media (max-width:454px) {
-    .hero h1, .hero h3, .hero h4 {
-        transform: scale(0.9);
-    }
-
-    .link-cont>* {
-        transform: scale(0.9);
-    }
-
-    .hero img {
-        margin-top: 25%;
-        transform: rotate(450deg);
-    }
-}
-
-@media (max-width:402px) {
-    .hero img {
-        margin-top: -5%;
-        transform: rotate(450deg) scale(2);
-        object-fit: contain;
-    }
-}
-
-@media (max-width:445px) {
-    .hero h3{
-        font-size: 25px;
-        margin-bottom: 8px;
-    }
-    .hero h1, .hero h3, .hero h4 {
-        transform: scale(0.95);
-    }
-}
-
-@media (max-width:422px) {
-    .hero h1{
-        font-size: 40px;
-    }
-    .hero h3{
-        font-size: 19px;
-        margin-bottom: 8px;
-    }
-    .hero h4{
-        font-size: 16px;
+@keyframes iphoneapp {
+    to{
+        transform: rotate(90deg) translateY(15%) translateX(0%);
     }
 }

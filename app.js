@@ -27,3 +27,5 @@ window.addEventListener('scroll',()=>{
         header.style.background='white';
     }
 })
+
+let image = document.querySelector(".hero img");
