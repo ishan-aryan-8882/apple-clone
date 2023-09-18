@@ -149,7 +149,7 @@ nav {
 .hero {
     background: black;
     padding: 70px 0;
-    padding-bottom: 0;
+    /* padding-bottom: 0; */
     position: relative;
     z-index: -1;
     overflow: hidden;
@@ -213,22 +213,44 @@ nav {
     .hero img {
         height: 220px;
         transform: translateX(-5%);
-        object-position: fixed;
     }
 }
 
 @media (max-width:771px) {
+    .hero{
+        position: relative;
+        /* height: 100vh; */
+    }
     .hero img {
-        height: 200px;
-        transform: rotate(90deg) translateY(0%) translateX(50%);
-        margin-top: 16%;
+        width: 100%;
+        height: auto;
+        transform: rotate(90deg) translateX(0) translateX(50%);
+        margin-top: 12%;
         animation: iphoneapp 1s forwards;
     }
     
 }
 
+@media (max-width:445px) {
+    .hero h1{
+        font-size: 40px;
+    }
+    .hero h3{
+        font-size: 21px;
+    }
+}
+@media (max-width:365px) {
+    .hero h1{
+        font-size: 40px;
+    }
+    .hero h3{
+        font-size: 17px;
+    }
+}
+
 @keyframes iphoneapp {
     to{
-        transform: rotate(90deg) translateY(15%) translateX(0%);
+        transform: rotate(90deg) translateY(-8%) translateX(0%);
+
     }
 }
