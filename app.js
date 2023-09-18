@@ -17,25 +17,22 @@ burger.addEventListener("click", () => {
 
 let header = document.querySelector("header");
 let hero = document.querySelector(".hero");
-window.addEventListener('scroll',()=>{
-    let rect = header.getBoundingClientRect();
-    let rectt = hero.getBoundingClientRect();
-    if(rect.bottom>rectt.top  && rect.bottom < rectt.bottom){
-        header.style.background='rgb(214,214,214)';
-    }
-    else{
-        header.style.background='white';
-    }
-})
+window.addEventListener("scroll", () => {
+  let rect = header.getBoundingClientRect();
+  let rectt = hero.getBoundingClientRect();
+  if (rect.bottom > rectt.top && rect.bottom < rectt.bottom) {
+    header.style.background = "rgb(214,214,214)";
+  } else {
+    header.style.background = "white";
+  }
+});
 
-// let sp = document.querySelector(".second-page");
-// window.addEventListener('scroll',()=>{
-//     let rect = header.getBoundingClientRect();
-//     let rectt = sp.getBoundingClientRect();
-//     if(rect.bottom>rectt.top){
-//         header.style.background='white';
-//     }
-//     else{
-//         header.style.background='white';
-//     }
-// })
+let spimg = document.querySelector(".second-page img");
+window.addEventListener("scroll", () => {
+  let rect = spimg.getBoundingClientRect();
+  if (rect.bottom < window.innerHeight) {
+    spimg.classList.add("spi");
+  } else {
+    spimg.classList.remove("spi");
+  }
+});

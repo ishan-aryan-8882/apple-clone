@@ -205,14 +205,14 @@ nav {
     padding: 5px 0 2px 0;
 }
 
-.hero img {
+.hi{
     /* height: 250px; */
     width: 100%;
     height: auto;
 }
 
 @media (max-width:910px) {
-    .hero img {
+    .hi{
         height: 220px;
         transform: translateX(-5%);
     }
@@ -224,7 +224,7 @@ nav {
         /* height: 100vh; */
     }
 
-    .hero img {
+    .hi {
         width: 100%;
         height: auto;
         transform: rotate(90deg) translateY(-8%) translateX(50%);
@@ -295,14 +295,15 @@ nav {
 
 @media (max-width:771px) {
     .second-page img {
-        width: 100%;
-        height: auto;
-        transform: rotate(0deg) scale(2.5);
+        transform: rotate(0deg) scale(0);
         margin-left: 2%;
-        animation: sp 1s forwards;
+        transition: 1s;
     }
     
+}
 
+.spi{
+    animation: sp 1s forwards;
 }
 
 @keyframes sp {
