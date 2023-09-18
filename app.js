@@ -20,7 +20,7 @@ let hero = document.querySelector(".hero");
 window.addEventListener('scroll',()=>{
     let rect = header.getBoundingClientRect();
     let rectt = hero.getBoundingClientRect();
-    if(rect.bottom>rectt.top){
+    if(rect.bottom>rectt.top  && rect.bottom < rectt.bottom){
         header.style.background='rgb(214,214,214)';
     }
     else{
@@ -28,4 +28,14 @@ window.addEventListener('scroll',()=>{
     }
 })
 
-let image = document.querySelector(".hero img");
+// let sp = document.querySelector(".second-page");
+// window.addEventListener('scroll',()=>{
+//     let rect = header.getBoundingClientRect();
+//     let rectt = sp.getBoundingClientRect();
+//     if(rect.bottom>rectt.top){
+//         header.style.background='white';
+//     }
+//     else{
+//         header.style.background='white';
+//     }
+// })
