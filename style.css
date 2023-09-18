@@ -254,3 +254,43 @@ nav {
 
     }
 }
+
+.second-page{
+    background: white;
+}
+
+.second-page h1, .second-page h3{
+    color: black;
+}
+
+.second-page img{
+    margin: auto;
+    margin-left: 10%;
+}
+
+@media (max-width: 1405px){
+    .second-page img {
+        margin-left: 0%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width:910px) {
+    .second-page img {
+        margin-left: 4%;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width:771px) {
+    .second-page img {
+        width: 100%;
+        height: auto;
+        transform: rotate(0deg) scale(1.5);
+        margin-left: 2%;
+        animation:none;
+    }
+    
+}
