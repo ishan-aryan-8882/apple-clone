@@ -17,8 +17,6 @@ body {
 header {
     display: flex;
     justify-content: center;
-    /* gap: 50px; */
-    /* padding: 5px 0; */
     position: relative;
 }
 
@@ -46,7 +44,6 @@ nav {
     display: flex;
     gap: 30px;
     transition: 0.8s;
-    z-index: 99;
     margin: auto 0;
 }
 
@@ -315,10 +312,14 @@ nav {
     text-align: center;
     gap: 4px;
     overflow: hidden;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
-.cards > *{
+.cards .link-cont{
+    z-index: 0;
+}
+
+.cards>* {
     /* border: 2px solid ; */
 }
 
@@ -366,28 +367,31 @@ nav {
 .cards:nth-child(3) img {
     width: 80%;
 }
+
 .cards:nth-child(4) img {
     width: 50%;
     filter: drop-shadow(20px 20px 2px rgba(0, 0, 0, 0.089));
 }
 
 @media (max-width:741px) {
-    .cards{
+    .cards {
         flex: 0 1 100%;
     }
-    .cards img{
+
+    .cards img {
         width: 100%;
         height: auto;
     }
 }
 
 @media (max-width:222px) {
-    .cards .link-cont{
+    .cards .link-cont {
         /* border: 2px solid; */
         justify-content: space-evenly;
         gap: 0;
     }
-    .cards .link-cont button{
+
+    .cards .link-cont button {
         /* border: 2px solid; */
     }
 }
