@@ -206,14 +206,14 @@ nav {
     padding: 5px 0 2px 0;
 }
 
-.hi{
+.hi {
     /* height: 250px; */
     width: 100%;
     height: auto;
 }
 
 @media (max-width:910px) {
-    .hi{
+    .hi {
         height: 220px;
         transform: translateX(-5%);
     }
@@ -264,6 +264,8 @@ nav {
 
 .second-page {
     background: white;
+    overflow: hidden;
+    margin: 20px 0;
 }
 
 .second-page h1, .second-page h3 {
@@ -273,53 +275,19 @@ nav {
 .second-page img {
     width: 100%;
     height: auto;
-    transform:scale(1);
-    transition: 1s;
     filter: saturate(2);
 }
 
 @media (max-width: 1405px) {
     .second-page img {
-        margin-top: 10%;
         margin-left: 0%;
         width: 100%;
         height: auto;
     }
 }
 
-@media (max-width:910px) {
-    .second-page img {
-        margin-left: 4%;
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-width:771px) {
-    .second-page img {
-        transform: rotate(0deg) scale(0);
-        margin-left: 2%;
-        transition: 1s;
-    }
-    
-}
-
-.spi{
-    animation: sp 1s forwards;
-}
-
-@keyframes sp {
-    to{
-        transform: rotate(0deg) scale(1.25);
-    }
-}
-
-.spit{
-    animation: spt 1s forwards;
-}
-
-@keyframes spt {
-    to{
-        transform: rotate(0deg) scale(2);
+@media (max-width:772px) {
+    .second-page img{
+        transform: scale(1.6);
     }
 }

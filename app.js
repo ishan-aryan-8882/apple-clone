@@ -26,20 +26,3 @@ window.addEventListener("scroll", () => {
     header.style.background = "white";
   }
 });
-
-let spimg = document.querySelector(".second-page img");
-window.addEventListener("scroll", () => {
-    let rect = spimg.getBoundingClientRect();
-    if (rect.bottom < window.innerHeight) {
-      spimg.classList.add("spi");
-    } else {
-      spimg.classList.remove("spi");
-    }
-    if(window.innerWidth<771){
-        if (rect.bottom < window.innerHeight) {
-            spimg.classList.add("spit");
-          } else {
-            spimg.classList.remove("spit");
-          }
-    }
-  });
