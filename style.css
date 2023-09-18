@@ -237,8 +237,6 @@ nav {
 @media (max-width:454px) {
     .hero h1, .hero h3, .hero h4 {
         transform: scale(0.9);
-        /* padding-right: 10px;
-        padding-left: 10px; */
     }
 
     .link-cont>* {
@@ -263,6 +261,9 @@ nav {
     .hero h3{
         font-size: 25px;
         margin-bottom: 8px;
+    }
+    .hero h1, .hero h3, .hero h4 {
+        transform: scale(0.95);
     }
 }
 
