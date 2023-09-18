@@ -266,6 +266,7 @@ nav {
 .second-page img{
     margin: auto;
     margin-left: 10%;
+    margin-top: 10%;
 }
 
 @media (max-width: 1405px){
