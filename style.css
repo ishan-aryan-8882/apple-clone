@@ -273,7 +273,7 @@ nav {
 .second-page img {
     width: 100%;
     height: auto;
-    transform:scale(0.1);
+    transform:scale(1);
     transition: 1s;
     /* margin-left: 10%; */
     /* border: 2px solid black; */
@@ -311,7 +311,7 @@ nav {
 
 @keyframes sp {
     to{
-        transform: rotate(0deg) scale(1.2);
+        transform: rotate(0deg) scale(1.25);
     }
 }
 
