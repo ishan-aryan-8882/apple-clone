@@ -217,10 +217,11 @@ nav {
 }
 
 @media (max-width:771px) {
-    .hero{
+    .hero {
         position: relative;
         /* height: 100vh; */
     }
+
     .hero img {
         width: 100%;
         height: auto;
@@ -228,49 +229,53 @@ nav {
         margin-top: 12%;
         animation: iphoneapp 1s forwards;
     }
-    
+
 }
 
 @media (max-width:445px) {
-    .hero h1{
+    .hero h1 {
         font-size: 40px;
     }
-    .hero h3{
+
+    .hero h3 {
         font-size: 21px;
     }
 }
+
 @media (max-width:365px) {
-    .hero h1{
+    .hero h1 {
         font-size: 40px;
     }
-    .hero h3{
+
+    .hero h3 {
         font-size: 17px;
     }
 }
 
 @keyframes iphoneapp {
-    to{
+    to {
         transform: rotate(90deg) translateY(-8%) translateX(0%);
 
     }
 }
 
-.second-page{
+.second-page {
     background: white;
 }
 
-.second-page h1, .second-page h3{
+.second-page h1, .second-page h3 {
     color: black;
 }
 
-.second-page img{
+.second-page img {
     margin: auto;
     margin-left: 10%;
-    margin-top: 10%;
 }
 
-@media (max-width: 1405px){
+@media (max-width: 1405px) {
     .second-page img {
+        margin-top: 10%;
+
         margin-left: 0%;
         width: 100%;
         height: auto;
@@ -291,7 +296,7 @@ nav {
         height: auto;
         transform: rotate(0deg) scale(1.5);
         margin-left: 2%;
-        animation:none;
+        animation: none;
     }
-    
+
 }
