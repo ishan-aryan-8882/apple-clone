@@ -18,7 +18,7 @@ header {
     display: flex;
     justify-content: center;
     /* gap: 50px; */
-    padding: 5px 0;
+    /* padding: 5px 0; */
     position: relative;
 }
 
@@ -27,13 +27,15 @@ header {
 }
 
 .logol ion-icon {
-    font-size: 22px;
-    margin: 0 50px 0 0;
+    font-size: 18px;
+    /* border: 2px solid; */
+    padding: 6px 25px 0 0;
 }
 
 header a {
     text-decoration: none;
     color: black;
+    font-size: 14px;
 }
 
 header>* {
@@ -45,18 +47,21 @@ nav {
     gap: 30px;
     transition: 0.8s;
     z-index: 99;
+    margin: auto 0;
 }
 
 .logor {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     padding: 4px 0;
 }
 
 .logor ion-icon {
-    font-size: 22px;
+    font-size: 18px;
+    /* border: 2px solid; */
+    padding: 5px 0 0 0;
 }
 
 .burger {
@@ -127,7 +132,6 @@ nav {
     }
 
     header {
-        padding: 5px;
         justify-content: space-between;
         position: sticky;
         top: 0;
@@ -229,8 +233,16 @@ nav {
 
     .hero img {
         margin-top: 25%;
-        transform: rotate(450deg);
+        transform: rotate(450deg) translateX(100%);
         /* border: 2px solid white; */
+        animation: ith 1s forwards;
+    }
+
+    @keyframes ith {
+        to{
+            transform: rotate(450deg) translateX(0%);
+
+        }
     }
 }
 
@@ -251,8 +263,8 @@ nav {
 
 @media (max-width:402px) {
     .hero img {
-        margin-top: 20%;
-        transform: rotate(450deg) translate(0%) scale(2);
+        margin-top: -5%;
+        transform: rotate(450deg) scale(2);
         object-fit: contain;
     }
 }

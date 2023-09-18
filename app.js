@@ -15,8 +15,15 @@ burger.addEventListener("click", () => {
   });
 });
 
+let header = document.querySelector("header");
 let hero = document.querySelector(".hero");
-let image = document.querySelector(".hero img");
-let hw = image.clientHeight;
-
-console.log(hw);
+window.addEventListener('scroll',()=>{
+    let rect = header.getBoundingClientRect();
+    let rectt = hero.getBoundingClientRect();
+    if(rect.bottom>rectt.top){
+        header.style.background='rgb(214,214,214)';
+    }
+    else{
+        header.style.background='white';
+    }
+})
