@@ -273,6 +273,8 @@ nav {
 .second-page img {
     width: 100%;
     height: auto;
+    transform:scale(0.1);
+    transition: 1s;
     /* margin-left: 10%; */
     /* border: 2px solid black; */
 }
