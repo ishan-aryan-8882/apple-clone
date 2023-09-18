@@ -263,8 +263,8 @@ nav {
 .second-page {
     background: white;
     overflow: hidden;
-    margin: 20px 0 40px 0;
-    padding-bottom: 0;
+    margin: 20px 0 0px 0;
+    /* padding-bottom: 0; */
 }
 
 .second-page h1, .second-page h3 {
