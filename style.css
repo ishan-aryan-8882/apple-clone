@@ -259,12 +259,19 @@ nav {
     }
 }
 
+@media (max-width:445px) {
+    .hero h3{
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+}
+
 @media (max-width:422px) {
     .hero h1{
         font-size: 40px;
     }
     .hero h3{
-        font-size: 18px;
+        font-size: 19px;
         margin-bottom: 8px;
     }
     .hero h4{
