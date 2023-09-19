@@ -362,17 +362,24 @@ nav {
 .cards img {
     margin-top: 20px;
     width: 100%;
-    height: auto;
-    margin: auto;
+    /* height: auto; */
+    /* margin: auto; */
+}
+
+.cards:nth-child(1) img {
+    width: 100%;
+    margin-bottom: 20px;
+    transform: scale(1.2);
 }
 
 .cards:nth-child(2) img {
     width: 70%;
-    margin-bottom: 20px;
+    margin: auto;
 }
 
 .cards:nth-child(3) img {
     width: 80%;
+    margin: auto;
 }
 
 .cards:nth-child(4) img {
