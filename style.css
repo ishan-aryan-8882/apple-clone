@@ -11,7 +11,7 @@ body {
 .first-wrapper {
     position: sticky;
     top: 0;
-    background-color: white;
+    /* background-color: white; */
     z-index: 9;
 }
 
@@ -368,7 +368,8 @@ nav {
 
 .cards:nth-child(1) img {
     width: 100%;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    margin-top: 10%;
     transform: scale(1.2);
 }
 

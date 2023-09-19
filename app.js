@@ -23,6 +23,6 @@ window.addEventListener("scroll", () => {
   if (rect.bottom > rectt.top && rect.bottom < rectt.bottom) {
     header.style.background = "rgb(214,214,214)";
   } else {
-    header.style.background = "white";
+    header.style.background = "rgb(255,255,255)";
   }
 });
