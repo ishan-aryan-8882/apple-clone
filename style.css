@@ -374,24 +374,24 @@ nav {
 .cards:nth-child(1) img {
     width: 100%;
     /* margin-bottom: 20px; */
-    margin-top: 10%;
-    transform: scale(1.2);
+    /* margin-top: 10%; */
+    /* transform: scale(1.2); */
 }
 
 .cards:nth-child(2) img {
-    width: 70%;
-    margin: auto;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .cards:nth-child(3) img {
-    width: 80%;
-    margin: auto;
+    width: 60%;
+    margin: 0 auto;
 }
 
 .cards:nth-child(4) img {
     width: 100%;
     /* filter: drop-shadow(20px 20px 2px rgba(0, 0, 0, 0.089)); */
-    margin-top: 0;
+    margin: 0 auto;
     /* box-shadow:0px 0px 2px rgb(0, 0, 0); */
 }
 
