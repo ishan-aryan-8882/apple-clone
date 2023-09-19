@@ -343,6 +343,11 @@ nav {
     /* border: 1px solid; */
 }
 
+.cards .fa-envira{
+    margin-right: 5px;
+    color: rgb(92, 246, 92);
+}
+
 .cards h5 {
     font-size: 18px;
     font-weight: 500;
