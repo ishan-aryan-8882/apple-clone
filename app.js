@@ -26,3 +26,13 @@ window.addEventListener("scroll", () => {
     header.style.background = "rgb(255,255,255)";
   }
 });
+
+
+let spi = document.querySelector(".second-page img");
+window.addEventListener('scroll',()=>{
+  let rect = spi.getBoundingClientRect();
+  spi.classList.remove("sig");
+  if(rect.top < window.innerHeight){
+    spi.classList.add("sig");
+  }
+})

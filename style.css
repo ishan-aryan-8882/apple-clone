@@ -261,8 +261,8 @@ nav {
 
 .second-page {
     background: white;
-    /* overflow: hidden; */
-    margin: 20px 0;
+    overflow: hidden;
+    /* margin: 20px 0; */
 }
 
 .second-page h1, .second-page h3 {
@@ -287,8 +287,20 @@ nav {
 @media (max-width:772px) {
     .second-page img {
         margin-top: 10px;
-        transform: scale(2.3);
         object-fit: cover;
+        transform: translateY(200%);
+    }
+
+    .sig{
+        animation: upper 1s forwards;
+
+    }
+
+    @keyframes upper {
+        to {
+            transform: translateY(5%) scale(2.3);
+
+        }
     }
 
     .second-page .link-cont  span{
