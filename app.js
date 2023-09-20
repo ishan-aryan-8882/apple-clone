@@ -29,10 +29,14 @@ window.addEventListener("scroll", () => {
 
 
 let spi = document.querySelector(".second-page img");
-window.addEventListener('scroll',()=>{
-  let rect = spi.getBoundingClientRect();
+let sl = document.querySelector(".second-page .link-cont span");
+
+function checkVisibility() {
+  let rect = sl.getBoundingClientRect();
   spi.classList.remove("sig");
-  if(rect.top < window.innerHeight){
+  if ( rect.bottom <= window.innerHeight) {
     spi.classList.add("sig");
   }
-})
+}
+
+window.addEventListener('scroll', checkVisibility);
