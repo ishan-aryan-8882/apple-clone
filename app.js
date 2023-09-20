@@ -34,7 +34,7 @@ let sl = document.querySelector(".second-page .link-cont span");
 function checkVisibility() {
   let rect = sl.getBoundingClientRect();
   spi.classList.remove("sig");
-  if ( rect.bottom <= window.innerHeight) {
+  if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
     spi.classList.add("sig");
   }
 }
